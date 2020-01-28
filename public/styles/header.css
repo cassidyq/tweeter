@@ -1,0 +1,21 @@
+header {
+  position: relative;
+  height: 400px;
+  align-content: center;
+}
+
+.header-bg {
+  background-color: rgb(238, 187, 49);
+  background-image: url("/images/asfalt-light.png");
+}
+
+.fixed {
+  position: relative;
+  top: 120px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+.center {
+  text-align: center;
+}
