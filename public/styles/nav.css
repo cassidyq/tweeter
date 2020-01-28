@@ -18,14 +18,15 @@ span {
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1.75em;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .push-left {
   margin-left: auto;
 }
 
 .bg-color {
-  background-color: #4056a1;
+  background-color: #5f7bda;
 }
 
 .fixed-top {

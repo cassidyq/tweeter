@@ -5,8 +5,9 @@ header {
 }
 
 .header-bg {
-  background-color: rgb(238, 187, 49);
+  background-color: rgb(170, 192, 252);
   background-image: url("/images/asfalt-light.png");
+  background-image: url("/images/beach.png");
 }
 
 .fixed {
@@ -15,6 +16,10 @@ header {
   right: 0;
   left: 0;
   z-index: 999;
+}
+img {
+  position: relative;
+  top: 30px;
 }
 .center {
   text-align: center;

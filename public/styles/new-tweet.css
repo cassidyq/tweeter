@@ -24,3 +24,7 @@ textarea {
   display: flex;
   padding-top: 10px;
 }
+
+.over {
+  color: #ff0000;
+}
