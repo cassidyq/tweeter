@@ -17,10 +17,12 @@ header {
   left: 0;
   z-index: 999;
 }
-img {
+
+.profile-pic {
   position: relative;
   top: 30px;
 }
-.center {
+
+.center-img {
   text-align: center;
 }

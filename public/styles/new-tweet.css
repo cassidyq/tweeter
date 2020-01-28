@@ -1,7 +1,6 @@
 input {
   color: #ffffff;
   background-color: #4056a1;
-  font-family: "Bungee", cursive;
   padding-left: 0.5em;
   padding-right: 0.5em;
   display: flex;
@@ -13,15 +12,16 @@ textarea {
   border-right: none;
   border-bottom-width: thick;
   border-bottom-color: #545149;
+  outline: none;
   background-color: #f4f1ec;
-  font-weight: 700;
+  /* font-weight: 700; */
   width: 100%;
   height: 50px;
 }
 
-.align-center {
+.center {
   align-content: center;
-  display: flex;
+  /* display: flex; */
   padding-top: 10px;
 }
 

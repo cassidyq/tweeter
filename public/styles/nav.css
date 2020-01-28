@@ -10,7 +10,7 @@ a {
   font-size: x-large;
 }
 
-span {
+.bold-font {
   font-family: "Bungee", cursive;
   font-size: xx-large;
 }
@@ -21,7 +21,7 @@ span {
   padding-right: 30px;
   padding-left: 30px;
 }
-.push-left {
+.push-right {
   margin-left: auto;
 }
 

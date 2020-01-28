@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/posted-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -33,13 +34,15 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="navbar bg-color fixed-top">
-      <span>tweeter</span>
-      <a class="push-left" href="" type="link"><b>Write</b>&nbsp;a new tweet</a>
+      <span class="bold-font">tweeter</span>
+      <a class="push-right" href="" type="link"
+        ><b>Write</b>&nbsp;a new tweet</a
+      >
     </nav>
 
-    <header class="header-bg fixed center">
+    <header class="header-bg fixed center-img">
       <div>
-        <img src="/images/profile-hex.png" />
+        <img class="profile-pic" src="/images/profile-hex.png" />
       </div>
       <br />
       <div>
@@ -56,11 +59,49 @@
             name="text"
             placeholder="What are you humming about?"
           ></textarea>
-          <div class="align-center">
-            <input type="submit" value="Tweet" />
-            <span class="counter push-left">140</span>
+          <div class="center">
+            <input class="bold-font" type="submit" value="Tweet" />
+            <span id="char-counter" class="bold-font push-right">140</span>
           </div>
         </form>
+      </section>
+      <section class="posted-tweets">
+        <article>
+          <header class="tweet-header">
+            <div class="align-center">
+              <img
+                style="width:60px;height:60px;"
+                src="/images/profile-hex.png"
+                alt="Avatar"
+              />
+              <span>User Name</span>
+            </div>
+            <span>@handle</span>
+          </header>
+          <div class="tweet-body">This is the tweet.</div>
+          <footer class="tweet-footer">
+            <span>10 days ago</span>
+            <span>buttons</span>
+          </footer>
+        </article>
+        <article>
+          <header class="tweet-header">
+            <div class="align-center">
+              <img
+                style="width:60px;height:60px;"
+                src="images/profile-hex.png"
+                alt="Avatar"
+              />
+              <span>User Name</span>
+            </div>
+            <span>@handle</span>
+          </header>
+          <div class="tweet-body">This is the tweet.</div>
+          <footer class="tweet-footer">
+            <span>10 days ago</span>
+            <span>buttons</span>
+          </footer>
+        </article>
       </section>
     </main>
   </body>
