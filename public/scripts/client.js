@@ -28,6 +28,12 @@ $(document).ready(function() {
     }
   };
 
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweetData) {
     const tweetArticle = `
     <article>
@@ -35,16 +41,16 @@ $(document).ready(function() {
         <div class="align-center">
           <img
             class="avatar-sm"
-            src= ${tweetData.user.avatars}
+            src= ${escape(tweetData.user.avatars)}
             alt="Avatar"
           />
-          <span>${tweetData.user.name}</span>
+          <span>${escape(tweetData.user.name)}</span>
         </div>
-        <span class="show-on-hover">${tweetData.user.handle}</span>
+        <span class="show-on-hover">${escape(tweetData.user.handle)}</span>
       </header>
-      <div class="tweet-body">${tweetData.content.text}</div>
+      <div class="tweet-body">${escape(tweetData.content.text)}</div>
       <footer class="tweet-footer">
-        <span>${getDaysAgo(tweetData.created_at)}</span>
+        <span>${getDaysAgo(escape(tweetData.created_at))}</span>
         <span>
           <i class="fas fa-flag">&nbsp;</i>
           <i class="fas fa-retweet">&nbsp;</i>
@@ -72,7 +78,6 @@ $(document).ready(function() {
     const $form = $("#create-new-tweet");
     $form.submit(function(event) {
       event.preventDefault();
-      console.log($form.serialize());
       const input = $("#tweet-input").val();
       if (input.length === 0) {
         alert("You haven't written anything yet!");

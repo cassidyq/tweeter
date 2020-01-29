@@ -38,10 +38,12 @@ article:hover .show-on-hover {
   margin: auto;
   outline: none;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 30px;
   text-align: left;
-  text-indent: 20px;
   width: 97%;
+  word-wrap: break-word;
 }
 
 .tweet-footer {
