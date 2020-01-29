@@ -1,20 +1,20 @@
 header {
-  position: relative;
-  height: 400px;
   align-content: center;
+  height: 400px;
+  position: relative;
 }
 
 .header-bg {
-  background-color: rgb(170, 192, 252);
-  background-image: url("/images/asfalt-light.png");
   background-image: url("/images/beach.png");
+  background-position: center bottom;
+  background-size: 100%;
 }
 
 .fixed {
-  position: relative;
-  top: 120px;
-  right: 0;
   left: 0;
+  position: relative;
+  right: 0;
+  top: 120px;
   z-index: 999;
 }
 

@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap"
     />
+    <script
+      src="https://kit.fontawesome.com/778286615e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -53,13 +57,10 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose your Tweet</h2>
+        <br />
         <form method="POST" action="/tweets/">
-          <textarea
-            name="text"
-            placeholder="What are you humming about?"
-          ></textarea>
-          <div class="center">
+          <textarea name="text" placeholder="What's on your mind?"></textarea>
+          <div class="align-center">
             <input class="bold-font" type="submit" value="Tweet" />
             <span id="char-counter" class="bold-font push-right">140</span>
           </div>
@@ -70,36 +71,22 @@
           <header class="tweet-header">
             <div class="align-center">
               <img
-                style="width:60px;height:60px;"
+                class="avatar-sm"
                 src="/images/profile-hex.png"
                 alt="Avatar"
               />
               <span>User Name</span>
             </div>
-            <span>@handle</span>
+            <span class="show-on-hover">@handle</span>
           </header>
           <div class="tweet-body">This is the tweet.</div>
           <footer class="tweet-footer">
             <span>10 days ago</span>
-            <span>buttons</span>
-          </footer>
-        </article>
-        <article>
-          <header class="tweet-header">
-            <div class="align-center">
-              <img
-                style="width:60px;height:60px;"
-                src="images/profile-hex.png"
-                alt="Avatar"
-              />
-              <span>User Name</span>
-            </div>
-            <span>@handle</span>
-          </header>
-          <div class="tweet-body">This is the tweet.</div>
-          <footer class="tweet-footer">
-            <span>10 days ago</span>
-            <span>buttons</span>
+            <span>
+              <i class="fas fa-flag">&nbsp;</i>
+              <i class="fas fa-retweet">&nbsp;</i>
+              <i class="fas fa-heart"></i>
+            </span>
           </footer>
         </article>
       </section>

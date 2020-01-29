@@ -1,19 +1,29 @@
 article {
   border: thick solid #545149;
+  margin-bottom: 0.5em;
   position: relative;
   top: 50px;
-  margin-bottom: 0.5em;
 }
 
 article:hover {
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  font-weight: bolder;
+}
+
+.show-on-hover {
+  display: none;
+}
+
+article:hover .show-on-hover {
+  color: rgba(0, 0, 255, 0.2);
+  display: block;
 }
 
 .tweet-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   height: auto;
+  justify-content: space-between;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   margin-left: 0.75em;
@@ -21,31 +31,36 @@ article:hover {
 }
 
 .tweet-body {
-  width: 97%;
-  margin: auto;
-  text-align: left;
-  text-indent: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   border-bottom: thick solid #545149;
   border-left: none;
   border-right: none;
   border-top: none;
+  margin: auto;
   outline: none;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: left;
+  text-indent: 20px;
+  width: 97%;
 }
 
 .tweet-footer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 0.75em;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
   margin-bottom: 1em;
   margin-left: 2em;
   margin-right: 2em;
-  font-size: 16px;
+  margin-top: 0.75em;
 }
 
 .align-center {
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+.avatar-sm {
+  height: 60px;
+  width: 60px;
 }
