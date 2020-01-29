@@ -58,38 +58,19 @@
     <main id="tweets-container">
       <section class="new-tweet">
         <br />
-        <form method="POST" action="/tweets/">
-          <textarea name="text" placeholder="What's on your mind?"></textarea>
+        <form id="create-new-tweet" method="POST" action="/tweets/">
+          <textarea
+            id="tweet-input"
+            name="text"
+            placeholder="What's on your mind?"
+          ></textarea>
           <div class="align-center">
             <input class="bold-font" type="submit" value="Tweet" />
             <span id="char-counter" class="bold-font push-right">140</span>
           </div>
         </form>
       </section>
-      <section class="posted-tweets">
-        <!-- <article>
-          <header class="tweet-header">
-            <div class="align-center">
-              <img
-                class="avatar-sm"
-                src="/images/profile-hex.png"
-                alt="Avatar"
-              />
-              <span>Cassidy</span>
-            </div>
-            <span class="show-on-hover">@cassidyq</span>
-          </header>
-          <div class="tweet-body">This is a tweet.</div>
-          <footer class="tweet-footer">
-            <span>10 days ago</span>
-            <span>
-              <i class="fas fa-flag">&nbsp;</i>
-              <i class="fas fa-retweet">&nbsp;</i>
-              <i class="fas fa-heart"></i>
-            </span>
-          </footer>
-        </article> -->
-      </section>
+      <section id="posted-tweets"></section>
     </main>
   </body>
 </html>

@@ -55,13 +55,13 @@ $(document).ready(function() {
     //order the tweets based on their dates created from earliest to oldest
     const byDate = tweetsData.slice(0);
     byDate.sort(function(a, b) {
-      return b.created_at - a.created_at;
+      return a.created_at - b.created_at;
     });
 
     // loops through sorted tweets
     for (const tweet of byDate) {
       let $tweet = createTweetElement(tweet); // calls createTweetElement for each tweet
-      $("#tweets-container").append($tweet); // takes return value and appends it to the tweets-container
+      $("#posted-tweets").prepend($tweet); // takes return value and appends it to the tweets-container
     }
   };
 
@@ -106,6 +106,20 @@ $(document).ready(function() {
     },
     created_at: 1570029200000
   };
+
+  $(function() {
+    const $form = $("#create-new-tweet");
+    $form.submit(function(event) {
+      event.preventDefault();
+      console.log($form.serialize());
+      $.ajax({
+        url: "/tweets",
+        method: "POST",
+        data: $form.serialize(),
+        success: $("#tweet-input").val("")
+      });
+    });
+  });
 
   renderTweets(data);
 });
