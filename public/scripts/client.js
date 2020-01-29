@@ -4,43 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  const data = [
-    {
-      user: {
-        name: "Newton",
-        avatars: "https://i.imgur.com/73hZDYK.png",
-        handle: "@SirIsaac"
-      },
-      content: {
-        text:
-          "If I have seen further it is by standing on the shoulders of giants"
-      },
-      created_at: 1571179200000
-    },
-    {
-      user: {
-        name: "Descartes",
-        avatars: "https://i.imgur.com/nlhLi3I.png",
-        handle: "@rd"
-      },
-      content: {
-        text: "Je pense , donc je suis"
-      },
-      created_at: 1570029200000
-    },
-    {
-      user: {
-        name: "Cassidy",
-        avatars: "https://i.imgur.com/z5LNkkB.png",
-        handle: "@cassidyq"
-      },
-      content: {
-        text: "This is the most recent tweet"
-      },
-      created_at: 1580029200000
-    }
-  ];
-
   function getDaysAgo(timeOfTweet) {
     const current = new Date();
     const postDate = new Date(timeOfTweet);
@@ -94,32 +57,40 @@ $(document).ready(function() {
     return $(tweetArticle).addClass("tweet");
   };
 
-  const tweetData = {
-    user: {
-      name: "Newton",
-      avatars: "https://i.imgur.com/73hZDYK.png",
-      handle: "@SirIsaac"
-    },
-    content: {
-      text:
-        "If I have seen further it is by standing on the shoulders of giants"
-    },
-    created_at: 1570029200000
+  const loadTweets = function() {
+    $("#posted-tweets").empty();
+    $.ajax({
+      url: "/tweets",
+      success: data => {
+        renderTweets(data);
+      }
+    });
   };
 
+  // when a new tweet is submitted, validate that it is the right length then post it and reload all tweets
   $(function() {
     const $form = $("#create-new-tweet");
     $form.submit(function(event) {
       event.preventDefault();
       console.log($form.serialize());
-      $.ajax({
-        url: "/tweets",
-        method: "POST",
-        data: $form.serialize(),
-        success: $("#tweet-input").val("")
-      });
+      const input = $("#tweet-input").val();
+      if (input.length === 0) {
+        alert("You haven't written anything yet!");
+      } else if (input.length > 140) {
+        alert("Your tweet is too long!");
+      } else {
+        $.ajax({
+          url: "/tweets",
+          method: "POST",
+          data: $form.serialize(),
+          success: function() {
+            $("#tweet-input").val("");
+            loadTweets();
+          }
+        });
+      }
     });
   });
 
-  renderTweets(data);
+  loadTweets();
 });
