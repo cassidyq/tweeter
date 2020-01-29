@@ -1,13 +1,13 @@
 nav {
-  height: 120px;
   color: #ffffff;
+  height: 120px;
   z-index: 1000;
 }
 
 a {
-  text-decoration: none;
   color: #ffffff;
   font-size: x-large;
+  text-decoration: none;
 }
 
 .bold-font {
@@ -16,10 +16,10 @@ a {
 }
 
 .navbar {
-  display: flex;
   align-items: center;
-  padding-right: 30px;
+  display: flex;
   padding-left: 30px;
+  padding-right: 30px;
 }
 .push-right {
   margin-left: auto;
@@ -30,9 +30,9 @@ a {
 }
 
 .fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
   left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 1000;
 }

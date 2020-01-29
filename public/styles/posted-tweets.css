@@ -62,5 +62,6 @@ article:hover .show-on-hover {
 
 .avatar-sm {
   height: 60px;
+  margin-right: 10px;
   width: 60px;
 }
