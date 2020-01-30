@@ -1,5 +1,6 @@
 $(document).ready(function() {
   const maxChars = 140;
+  $("#char-counter").text(maxChars);
 
   $("textarea").on("keyup keydown", function() {
     const $count = $("#char-counter");

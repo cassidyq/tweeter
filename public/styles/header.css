@@ -7,7 +7,7 @@ header {
 .header-bg {
   background-image: url("/images/beach.png");
   background-position: center bottom;
-  background-size: 100%;
+  background-size: 120%;
 }
 
 .fixed {

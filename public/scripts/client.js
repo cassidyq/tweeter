@@ -50,7 +50,7 @@ $(document).ready(function() {
       </header>
       <div class="tweet-body">${escape(tweetData.content.text)}</div>
       <footer class="tweet-footer">
-        <span>${getDaysAgo(escape(tweetData.created_at))}</span>
+        <span>${getDaysAgo(tweetData.created_at)}</span>
         <span>
           <i class="fas fa-flag">&nbsp;</i>
           <i class="fas fa-retweet">&nbsp;</i>
@@ -73,7 +73,7 @@ $(document).ready(function() {
     });
   };
 
-  // when a new tweet is submitted, validate that it is the right length then post it and reload all tweets
+  // upon new tweet submission, validate that it is the right length then post it and reload all tweets
   $(function() {
     const $form = $("#create-new-tweet");
     $form.submit(function(event) {
@@ -90,11 +90,38 @@ $(document).ready(function() {
           data: $form.serialize(),
           success: function() {
             $("#tweet-input").val("");
+            $("#char-counter").text("140");
             loadTweets();
           }
         });
       }
     });
+  });
+
+  // on click of arrow in nav display the new tweet section
+  $("#scroll-arrow").click(function(event) {
+    event.preventDefault();
+    $(".new-tweet").slideToggle("slow");
+    $("#tweet-input").focus();
+  });
+
+  // when scrolling down the page display the "scroll up" button
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+      $(".scrollTopBtn").addClass("show");
+    } else {
+      $(".scrollTopBtn").removeClass("show");
+    }
+  });
+
+  // when "scroll up" button is clicked scroll to top of page and display new tweet section
+  $(".scrollTopBtn").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    if ($(".new-tweet").is(":hidden")) {
+      $(".new-tweet").slideToggle("slow");
+    }
+    $("#tweet-input").focus();
   });
 
   loadTweets();

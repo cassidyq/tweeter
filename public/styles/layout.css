@@ -31,6 +31,33 @@ main {
   width: 90%;
 }
 
+.scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #5f7bda;
+  color: white;
+  cursor: pointer;
+  padding-bottom: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.scrollTopBtn:hover {
+  background-color: #93a9f0;
+}
+
+main .show {
+  display: block;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

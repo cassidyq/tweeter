@@ -4,6 +4,18 @@ nav {
   z-index: 1000;
 }
 
+#scroll-arrow {
+  outline: none;
+  border: none;
+  background-color: #5f7bda;
+  color: #ffffff;
+}
+
+#scroll-arrow:hover {
+  position: relative;
+  top: 10px;
+}
+
 .normal-font {
   color: #ffffff;
   font-size: x-large;
@@ -36,16 +48,4 @@ nav {
   right: 0;
   top: 0;
   z-index: 1000;
-}
-
-.arrow {
-  outline: none;
-  border: none;
-  background-color: #5f7bda;
-  color: #ffffff;
-}
-
-.arrow:hover {
-  position: relative;
-  top: 10px;
 }

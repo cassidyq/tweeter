@@ -41,7 +41,11 @@
       <span class="bold-font">tweeter</span>
       <span class="center-img">
         <div class="normal-font push-right"><b>Write</b>&nbsp;a new tweet</div>
-        <button type="submit" class="arrow fas fa-angle-double-down"></button>
+        <button
+          type="submit"
+          class="fas fa-angle-double-down"
+          id="scroll-arrow"
+        ></button>
       </span>
     </nav>
 
@@ -66,12 +70,18 @@
             placeholder="What's on your mind?"
           ></textarea>
           <div class="align-center">
-            <input class="bold-font" type="submit" value="Tweet" />
-            <span id="char-counter" class="bold-font push-right">140</span>
+            <input class="btn-size bold-font" type="submit" value="Tweet" />
+            <span id="char-counter" class="btn-size bold-font push-right"
+              >140</span
+            >
           </div>
         </form>
       </section>
       <section id="posted-tweets"></section>
+      <button
+        type="sumbit"
+        class="scrollTopBtn fas fa-angle-double-up"
+      ></button>
     </main>
   </body>
 </html>
