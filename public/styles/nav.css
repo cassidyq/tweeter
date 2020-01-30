@@ -4,14 +4,14 @@ nav {
   z-index: 1000;
 }
 
-#scroll-arrow {
+#nav-scroll {
   outline: none;
   border: none;
   background-color: #5f7bda;
   color: #ffffff;
 }
 
-#scroll-arrow:hover {
+#nav-scroll:hover {
   position: relative;
   top: 10px;
 }

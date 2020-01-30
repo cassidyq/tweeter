@@ -19,7 +19,7 @@ textarea {
   height: 2em;
 }
 
-.new-tweet {
+.hidden {
   display: none;
 }
 

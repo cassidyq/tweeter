@@ -99,7 +99,7 @@ $(document).ready(function() {
   });
 
   // on click of arrow in nav display the new tweet section
-  $("#scroll-arrow").click(function(event) {
+  $("#nav-scroll").click(function(event) {
     event.preventDefault();
     $(".new-tweet").slideToggle("slow");
     $("#tweet-input").focus();
@@ -109,8 +109,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(window).scrollTop() > 500) {
       $(".scrollTopBtn").addClass("show");
+      $("#nav-scroll").addClass("hidden");
     } else {
       $(".scrollTopBtn").removeClass("show");
+      $("#nav-scroll").removeClass("hidden");
     }
   });
 
