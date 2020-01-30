@@ -7,7 +7,7 @@ header {
 .header-bg {
   background-image: url("/images/beach.png");
   background-position: center bottom;
-  background-size: 120%;
+  background-size: 115%;
 }
 
 .fixed {
@@ -15,7 +15,7 @@ header {
   position: relative;
   right: 0;
   top: 120px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .profile-pic {

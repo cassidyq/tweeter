@@ -80,10 +80,19 @@ $(document).ready(function() {
       event.preventDefault();
       const input = $("#tweet-input").val();
       if (input.length === 0) {
-        alert("You haven't written anything yet!");
+        $("#error-message").text(
+          " OOPS! Your tweet is empty. Tell us what's on your mind!"
+        );
+        $("#error-message").slideDown("slow");
       } else if (input.length > 140) {
-        alert("Your tweet is too long!");
+        $("#error-message").text(
+          " OOPS! Your tweet is too long. Please enter up to 140 characters."
+        );
+        $("#error-message").slideDown("slow");
       } else {
+        if ($("#error-message").is(":visible")) {
+          $("#error-message").slideUp();
+        }
         $.ajax({
           url: "/tweets",
           method: "POST",
@@ -107,12 +116,12 @@ $(document).ready(function() {
 
   // when scrolling down the page display the "scroll up" button
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 500) {
-      $(".scrollTopBtn").addClass("show");
-      $("#nav-scroll").addClass("hidden");
+    if ($(window).scrollTop() > 475) {
+      $(".scrollTopBtn").slideDown("slow");
+      $("#nav-scroll").slideUp("slow");
     } else {
-      $(".scrollTopBtn").removeClass("show");
-      $("#nav-scroll").removeClass("hidden");
+      $(".scrollTopBtn").slideUp("slow");
+      $("#nav-scroll").slideDown("slow");
     }
   });
 

@@ -1,5 +1,6 @@
 article {
-  border: thick solid #545149;
+  border: medium solid #545149;
+  border-radius: 15px;
   margin-bottom: 0.5em;
   position: relative;
   top: 50px;
@@ -7,7 +8,7 @@ article {
 
 article:hover {
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .show-on-hover {
@@ -31,10 +32,11 @@ article:hover .show-on-hover {
 }
 
 .tweet-body {
-  border-bottom: thick solid #545149;
+  border-bottom: medium solid #545149;
   border-left: none;
   border-right: none;
   border-top: none;
+  font-size: 80%;
   margin: auto;
   outline: none;
   padding-bottom: 30px;

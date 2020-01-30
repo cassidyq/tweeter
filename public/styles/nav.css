@@ -1,7 +1,7 @@
 nav {
   color: #ffffff;
   height: 120px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #nav-scroll {
@@ -9,22 +9,38 @@ nav {
   border: none;
   background-color: #5f7bda;
   color: #ffffff;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
 
 #nav-scroll:hover {
-  position: relative;
-  top: 10px;
+  color: #3b59bd;
 }
 
 .normal-font {
   color: #ffffff;
-  font-size: x-large;
+  font-size: 20px;
   text-decoration: none;
 }
 
 .bold-font {
-  font-family: "Bungee", cursive;
+  font-family: "Poppins", cursive;
   font-size: xx-large;
+  font-weight: 900;
+}
+
+.lg-font {
+  font-size: 40px;
 }
 
 .navbar {
@@ -47,5 +63,4 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
 }
