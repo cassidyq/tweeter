@@ -39,11 +39,6 @@ textarea {
   font-size: 24px;
 }
 
-.center {
-  align-content: center;
-  padding-top: 10px;
-}
-
 .separate {
   display: flex;
   justify-content: space-between;

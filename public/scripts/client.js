@@ -28,6 +28,7 @@ $(document).ready(function() {
     }
   };
 
+  //clean user input to help prevent cross site scripting
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -107,7 +108,7 @@ $(document).ready(function() {
     });
   });
 
-  // on click of arrow in nav display the new tweet section
+  // on click of the arrow in the navbar display the create new tweet section
   $("#nav-scroll").click(function(event) {
     event.preventDefault();
     $(".new-tweet").slideToggle("slow");
@@ -125,7 +126,7 @@ $(document).ready(function() {
     }
   });
 
-  // when "scroll up" button is clicked scroll to top of page and display new tweet section
+  // when "scroll up" button is clicked scroll to top of page and display create new tweet section
   $(".scrollTopBtn").click(function(event) {
     event.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "slow");
