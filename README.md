@@ -8,19 +8,19 @@ This project used HTML, CSS, JS, jQuery and AJAX on the front-end, and Node, Exp
 
 ### New Tweet
 
-!["New Tweet"]()
+!["New Tweet"](https://github.com/cassidyq/tweeter/blob/master/docs/new-tweet.png?raw=true)
 
 ### Tweeter Feed
 
-!["Tweeter Feed"]()
+!["Tweeter Feed"](https://github.com/cassidyq/tweeter/blob/master/docs/tweeter-feed.png?raw=true)
 
 ### Desktop View
 
-!["Desktop View"]()
+!["Desktop View"](https://github.com/cassidyq/tweeter/blob/master/docs/desktop-view.png?raw=true)
 
 ### Tablet View
 
-!["Tablet View"]()
+!["Tablet View"](https://github.com/cassidyq/tweeter/blob/master/docs/tablet-view.png?raw=true)
 
 ## Getting Started
 
