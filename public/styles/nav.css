@@ -5,13 +5,13 @@ nav {
 }
 
 #nav-scroll {
-  outline: none;
-  border: none;
-  background-color: #5f7bda;
-  color: #ffffff;
   animation: bounce 0.8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  outline: none;
 }
 
 @keyframes bounce {

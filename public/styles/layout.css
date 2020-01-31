@@ -28,7 +28,6 @@ main {
   left: 5%;
   position: relative;
   text-align: center;
-  top: 120px;
   width: 90%;
 }
 
@@ -61,7 +60,3 @@ main .show {
 main .hidden {
   display: none;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

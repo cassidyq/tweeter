@@ -2,20 +2,15 @@ header {
   align-content: center;
   height: 400px;
   position: relative;
+  z-index: 99;
 }
 
 .header-bg {
   background-image: url("/images/beach.png");
   background-position: center bottom;
   background-size: 115%;
-}
-
-.fixed {
-  left: 0;
-  position: relative;
-  right: 0;
   top: 120px;
-  z-index: 99;
+  width: 100%;
 }
 
 .profile-pic {
