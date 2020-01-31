@@ -81,12 +81,12 @@ $(document).ready(function() {
       const input = $("#tweet-input").val();
       if (input.length === 0) {
         $("#error-message").text(
-          " OOPS! Your tweet is empty. Tell us what's on your mind!"
+          "❌ OOPS! Your tweet is empty. Tell us what's on your mind."
         );
         $("#error-message").slideDown("slow");
       } else if (input.length > 140) {
         $("#error-message").text(
-          " OOPS! Your tweet is too long. Please enter up to 140 characters."
+          "❌ OOPS! Your tweet is too long. Please enter up to 140 characters."
         );
         $("#error-message").slideDown("slow");
       } else {
@@ -116,12 +116,12 @@ $(document).ready(function() {
 
   // when scrolling down the page display the "scroll up" button
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 475) {
+    if ($(window).scrollTop() > 465) {
       $(".scrollTopBtn").slideDown("slow");
-      $("#nav-scroll").slideUp("slow");
+      $(".nav-btn").slideUp("slow");
     } else {
       $(".scrollTopBtn").slideUp("slow");
-      $("#nav-scroll").slideDown("slow");
+      $(".nav-btn").slideDown("slow");
     }
   });
 

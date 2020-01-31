@@ -27,7 +27,7 @@ textarea {
   color: #cc0000;
   display: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   padding-top: 12px;
   padding-bottom: 12px;
   position: flex;
@@ -36,12 +36,17 @@ textarea {
 }
 
 .btn-size {
-  font-size: 0.85em;
+  font-size: 24px;
 }
 
 .center {
   align-content: center;
   padding-top: 10px;
+}
+
+.separate {
+  display: flex;
+  justify-content: space-between;
 }
 
 .highlight-red {

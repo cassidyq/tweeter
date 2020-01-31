@@ -49,6 +49,10 @@ nav {
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 .push-right {
   margin-left: auto;
@@ -56,11 +60,4 @@ nav {
 
 .bg-color {
   background-color: #5f7bda;
-}
-
-.fixed-top {
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
 }

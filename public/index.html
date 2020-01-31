@@ -48,10 +48,10 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav class="navbar bg-color fixed-top">
+    <nav class="navbar bg-color">
       <span class="bold-font lg-font">tweeter</span>
-      <span class="center-img">
-        <div class="normal-font push-right"><b>Write</b>&nbsp;a new tweet</div>
+      <span class="nav-btn center-img">
+        <div class="normal-font"><b>Write</b>&nbsp;a new tweet</div>
         <button
           type="submit"
           class="fas fa-angle-double-down"
@@ -83,11 +83,9 @@
             name="text"
             placeholder="What's on your mind?"
           ></textarea>
-          <div class="align-center">
+          <div class="align-center separate">
             <input class="btn-size bold-font" type="submit" value="tweet" />
-            <span id="char-counter" class="btn-size bold-font push-right"
-              >140</span
-            >
+            <span id="char-counter" class="btn-size bold-font">140</span>
           </div>
         </form>
       </section>

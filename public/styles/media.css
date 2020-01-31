@@ -9,6 +9,10 @@
     height: auto;
   }
 
+  .navbar {
+    position: absolute;
+  }
+
   nav,
   #nav-scroll,
   .normal-font {
@@ -30,7 +34,7 @@
   }
 
   #tweets-container {
-    width: 60%;
+    width: 65%;
     float: right;
     padding-right: 4em;
     top: 7em;
