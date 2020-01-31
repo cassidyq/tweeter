@@ -11,13 +11,13 @@ article:hover {
   font-weight: 500;
 }
 
-.show-on-hover {
-  display: none;
-}
-
 article:hover .show-on-hover {
   color: rgba(0, 0, 255, 0.2);
   display: block;
+}
+
+.show-on-hover {
+  display: none;
 }
 
 .tweet-header {

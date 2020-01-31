@@ -1,5 +1,11 @@
 /* Tablet Styles */
 @media only screen and (max-width: 1023px) {
+  nav,
+  #nav-scroll,
+  .normal-font {
+    color: #5f7bda;
+  }
+
   .bg-color {
     background-color: transparent;
   }
@@ -11,12 +17,6 @@
 
   .navbar {
     position: absolute;
-  }
-
-  nav,
-  #nav-scroll,
-  .normal-font {
-    color: #5f7bda;
   }
 
   .profile-pic {

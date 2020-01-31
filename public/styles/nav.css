@@ -13,7 +13,7 @@ nav {
   color: #ffffff;
   outline: none;
 }
-
+/*-- nav arrow annimation --*/
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -47,9 +47,9 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  left: 0;
   padding-left: 30px;
   padding-right: 30px;
-  left: 0;
   position: fixed;
   right: 0;
   top: 0;
