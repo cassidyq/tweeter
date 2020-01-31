@@ -1,0 +1,42 @@
+/* Tablet Styles */
+@media only screen and (max-width: 1023px) {
+  .bg-color {
+    background-color: transparent;
+  }
+
+  .header-bg {
+    top: 0px;
+    height: auto;
+  }
+
+  nav,
+  #nav-scroll,
+  .normal-font {
+    color: #5f7bda;
+  }
+
+  .profile-pic {
+    top: 50px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  #hdr {
+    width: 30%;
+    float: left;
+    left: 2em;
+    top: 9em;
+  }
+
+  #tweets-container {
+    width: 60%;
+    float: right;
+    padding-right: 4em;
+    top: 7em;
+  }
+
+  .header-bg {
+    background-size: cover;
+  }
+}
